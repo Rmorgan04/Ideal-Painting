@@ -1,6 +1,8 @@
 
 import Navigation from './Components/Navigation/navigation';
+import Estimate from './Components/Estimate/estimate';
 import Values from './Components/Values/values';
+import Services from './Components/Services/services';
 import './App.css';
 
 function App() {
@@ -16,9 +18,12 @@ function App() {
         <section>
           <div className='hero-background'>
             <div className='hero-img'>
-              <h1 className='darkened'> Ideal Painting</h1>
+              <div className='darkened'>
+                <h1>Ideal Painting</h1>
+                <h2>Let Us Breath New Life into Your Home</h2>
+              </div>
               <div>
-              
+                <Estimate />
               </div>
             </div>
           </div>
@@ -27,7 +32,7 @@ function App() {
             <Values />           
           </section>
           <section className='services-section'>
-            <h3>Services</h3>
+            <Services />
           </section>
           <section className='contact-section'>
             <h3>Contact Us</h3>
