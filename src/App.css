@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+.large-screen {
+    display: none;
+}
+
+.hidden {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(20px);
+    transition: .5s ease;
+    
+}
+
+.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+    transition: .5s ease;
+
+}
+
+
+/* Navigation Section */
+
+.drop-btn {
+    position: relative;
+    cursor: pointer;
+    border: none;
+    padding: 0;
+    background: none;
+}
+
+.dropdown {
+    width: 30vw;
+    position: absolute;
+    background-color: white;
+    border-left: 2px orange solid;
+    border-bottom: 2px orange solid;
+    border-bottom-left-radius: 5px;
+    padding: 10px;
+    top: 10vh;
+    right: 0;
+}
+
+
+.dropdown li {
+    padding: 7px 0;
+    font-size: 20px;
+}
+
+.dropdown li:hover {
+    color: orange;
+    transform: scale(1.10);
+}
+
+nav {
+    height: 10vh;
+    background-color: orange;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5vw;
+}
+
+li {
+    list-style: none;
+}
+
+/* Hero Section */
+
+.hero-background {
+    background: url(https://i.imgur.com/DdWzBTy.jpg) no-repeat center;
+    background-size: cover;
+    height: 65vh;
+}
+
+.darkened {
+    width: 100%;
+    background-image: linear-gradient(to bottom, black, transparent);
+    color: white;
+}
+
+h1 {
+    font-size: 40px;
+    padding-top: 7.5vh;
+}
+
+h2 {
+    margin-top: 5vh;
+}
+
+/* Values Section */
+
+.values-container {
+    display: flex;
+    overflow: hidden;
+    width: 100vw;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+.previous:hover, .next:hover{
+    transform: scale(1.1);
+    transition: .5s ease-in-out;
+}
+
+.previous {
+    position: absolute;
+    left: 2.5vw;
+    top: 50%;
+    font-size: x-large;
+    cursor: pointer;
+}
+
+.next {
+    position: absolute;
+    right: 2.5vw;
+    top: 50%;
+    font-size: x-large;
+    cursor: pointer;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1;}
+}
+
+
+.value {
+    margin: 5vh 10vw;
+}
+
+.value h3 {
+    margin-bottom: 2vh;
+}
+
+.about-section img {
+ width: 50vw;
+ height: 350px;
+}
