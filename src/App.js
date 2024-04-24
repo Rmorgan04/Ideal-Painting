@@ -3,7 +3,9 @@ import Navigation from './Components/Navigation/navigation';
 import Estimate from './Components/Estimate/estimate';
 import Values from './Components/Values/values';
 import Services from './Components/Services/services';
+import Contact from './Components/Contact/contact';
 import './App.css';
+import Testimonials from './Components/Testimonials/testimonials';
 
 function App() {
   return (
@@ -34,8 +36,11 @@ function App() {
           <section className='services-section'>
             <Services />
           </section>
+          <section>
+            <Testimonials />
+          </section>
           <section className='contact-section'>
-            <h3>Contact Us</h3>
+            <Contact />
           </section>
       </main>
       <footer>

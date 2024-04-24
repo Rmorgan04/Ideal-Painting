@@ -39,10 +39,10 @@ useEffect(() => {
             </div>
             <div className={`dropdown ${open? 'show' : 'hidden'}`}>
                 <ul>
-                    <li><NavLink to=''>Home</NavLink></li>
-                    <li><NavLink to=''>About</NavLink></li>
-                    <li><NavLink to=''>Services</NavLink></li>
-                    <li><NavLink to=''>Contact</NavLink></li>
+                    <li><NavLink  className="white" to=''>Home</NavLink></li>
+                    <li className="border-top"><NavLink className="white" to=''>About</NavLink></li>
+                    <li className="border-top"><NavLink className="white" to=''>Services</NavLink></li>
+                    <li className="border-top"><NavLink className="white" to=''>Contact</NavLink></li>
                 </ul>
             </div>
           </div>

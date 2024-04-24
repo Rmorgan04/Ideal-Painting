@@ -46,6 +46,18 @@ a {
 
 }
 
+.white {
+    color: white ;
+}
+
+.charcoal {
+    color: #333;
+}
+
+.white:hover {
+    color: #38a3a5;
+    transition: .5s ease;
+}
 
 /* Navigation Section */
 
@@ -58,26 +70,28 @@ a {
 }
 
 .dropdown {
-    width: 30vw;
+    width: 100vw;
     position: absolute;
-    background-color: white;
-    border-left: 2px #38a3a5 solid;
-    border-bottom: 2px #38a3a5 solid;
-    border-bottom-left-radius: 5px;
+    background-color: #333;
     padding: 10px;
     top: 10vh;
     right: 0;
 }
 
-
-.dropdown li {
-    padding: 7px 0;
-    font-size: 20px;
+.dropdown ul {
+    padding: 1rem;
+    width: 100%;
 }
 
-.dropdown li:hover {
-    color: orange;
-    transform: scale(1.10);
+.dropdown ul li {
+    padding: 1rem;
+    font-size: 1.5rem;
+    width: 100%;
+    text-align: left;
+}
+
+.border-top {
+    border-top: 1px solid white;
 }
 
 nav {
@@ -119,7 +133,6 @@ h1 {
 
 form {
     width: 80%;
-    height: 65vh;
     background-color: white;
     margin: 0 auto;
     padding: .5rem;
@@ -128,11 +141,18 @@ form {
 }
 
 form h3 {
+    font-size: 1.5rem;
+    font-weight: normal;
     padding: 1rem;
     margin: 2.5rem auto;
 }
 
-input {
+form p {
+    margin: -1rem 0 1rem;
+    color: #333;
+}
+
+input, textarea {
     width: 90%;
     height: 2.8rem;
     margin: .25rem auto;
@@ -141,6 +161,7 @@ input {
     background-color: whitesmoke;
     font-size: large;
 }
+
 
 form button {
     border-radius: 5px;
@@ -180,7 +201,7 @@ h2 {
 }
 
 .teal {
-    color: #38a5a3;
+    color: #38a3a5;
 }
 
 
@@ -204,9 +225,14 @@ h2 {
 
 .values-header {
     color: #333;
-    background: linear-gradient(to bottom, #38a3a5 10%, transparent);
+    background: linear-gradient(to bottom, #38a3a5 95%, transparent);
     width: 100%;
     font-size: 1.3rem;
+}
+
+.values-header h2 {
+    font-weight: normal;
+    color: white;
 }
 
 .value {
@@ -233,8 +259,10 @@ h2 {
 
 .services {
     padding: 5vh 0;
-    margin: 2rem 0;
-    background: linear-gradient(to top, #38a5a3 95%, transparent);
+    margin: 2rem 0 0 0;
+    background: linear-gradient(to top, #38a3a5 99%, transparent);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 
 .services h3, h4, p {
@@ -283,3 +311,4 @@ h2 {
     transform: scale(1.1);
     transition: .5s ease;
 }
+
