@@ -335,7 +335,7 @@ h2 {
     background-color: #333;
 }
 
-.footer h2, h3, p {
+.footer h2, .footer h3, .footer p {
     color: white;
     font-weight: normal;
     text-align: center;
