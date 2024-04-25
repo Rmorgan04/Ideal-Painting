@@ -189,6 +189,7 @@ h2 {
     align-items: center;
     justify-content: center;
     color: #333;
+    min-height: 50vh;
 }
 
 .value-title span {
@@ -312,3 +313,30 @@ h2 {
     transition: .5s ease;
 }
 
+
+/* Contact Section */
+
+.contact-section {
+    background: url('https://i.imgur.com/ixQDboA.jpg') no-repeat center;
+    background-size: cover;
+    padding: 5vh 0;
+}
+
+/* Testimonials Section */
+
+.testimonials {
+    padding: 5vh 0 10vh;
+    min-height: 75vh;
+}
+
+/* Footer Section */
+
+.footer {
+    background-color: #333;
+}
+
+.footer h2, h3, p {
+    color: white;
+    font-weight: normal;
+    text-align: center;
+}

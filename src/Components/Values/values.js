@@ -3,17 +3,17 @@ import { useState } from "react";
 const values = [
   {
     title: 'Passion',
-    icon: <span class="material-symbols-outlined red">favorite</span>,
+    icon: <span className="material-symbols-outlined red">favorite</span>,
     description: 'We\'re a team of passionate Northeastern Oklahoma painters dedicated to transforming your vision into a reality that reflects both perfection and your unique style.'
   },
   {
     title: 'Integrity',
-    icon: <span class="material-symbols-outlined">handshake</span>,
+    icon: <span className="material-symbols-outlined">handshake</span>,
     description: 'We use only the highest quality materials and employ meticulous techniques to ensure a flawless finish that lasts.'
   },
   {
     title: 'Communication',
-    icon: <span class="material-symbols-outlined teal">diversity_3</span>,
+    icon: <span className="material-symbols-outlined teal">diversity_3</span>,
     description: 'We listen closely to your needs and keep you informed throughout the entire project, from initial consultation to final brushstroke.'
   }
 ]
@@ -43,7 +43,7 @@ function Values () {
               <div className='values-container'>
                 <div className="value fade">
                   <div className="value-title">
-                    <icon>{values[currentIndex].icon}</icon>
+                    <div>{values[currentIndex].icon}</div>
                     <h3>{values[currentIndex].title}</h3>
                   </div>                  
                   <p>{values[currentIndex].description}</p>

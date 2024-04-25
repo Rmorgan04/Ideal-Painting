@@ -6,6 +6,7 @@ import Services from './Components/Services/services';
 import Contact from './Components/Contact/contact';
 import './App.css';
 import Testimonials from './Components/Testimonials/testimonials';
+import Footer from './Components/Footer/footer';
 
 function App() {
   return (
@@ -44,7 +45,7 @@ function App() {
           </section>
       </main>
       <footer>
-
+        <Footer />
       </footer>
     </div>
   );

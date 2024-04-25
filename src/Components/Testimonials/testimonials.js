@@ -20,15 +20,22 @@ function Testimonials() {
     const [currentIndex, setCurrentIndex] = useState(0);
 
     const rotateNext = () => {
-        setCurrentIndex((prevIndex) => (prevIndex + 1) % testimonial.length);
+        if (currentIndex === testimonial.length - 1) {
+            return setCurrentIndex(0);
+        }
+        return setCurrentIndex(currentIndex + 1);
     }
 
-    // useEffect(() => {
-
-    // })
+    useEffect(() => {
+       const interval = setInterval(() => {
+        rotateNext()
+       }, 5000)
+       
+       return() => clearInterval(interval)
+    });
 
     return (
-        <div>
+        <div className="testimonials">
             <h2>Testimonials</h2>
             <div>
                 <p className="charcoal">&quot;{testimonial[currentIndex].review}&quot;</p>
