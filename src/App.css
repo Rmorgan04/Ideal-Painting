@@ -13,7 +13,7 @@ h1, h2, h3, h4, h5 {
     color: #333;
 }
 
-p, input, button {
+p, input, button, textarea {
     font-family: "EB Garamond", serif;
     color: #333;
     font-size: 1.2rem;
@@ -59,7 +59,42 @@ a {
     transition: .5s ease;
 }
 
+.bg-coal {
+    background: linear-gradient(to bottom, #333 95%, transparent);
+    padding-bottom: 2vh;
+    font-weight: normal;
+}
+
+.bg-coal h1, .bg-coal h2, .bg-coal h3, .bg-coal p {
+    color: white;
+}
+
+.bg-teal {
+    background: linear-gradient(to top, #38a3a5 98%, transparent);
+    padding: 5vh 0;
+}
+
+.bg-teal h3 {
+    color: white;
+    font-weight: normal;
+    font-size: 1.5rem;
+}
+
+.bg-white {
+    padding: 5vh 0;
+}
+
+.bg-white h3, .bg-white p {
+    color: #333;
+}
+
 /* Navigation Section */
+
+.logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
 
 .drop-btn {
     position: relative;
@@ -107,6 +142,8 @@ li {
     list-style: none;
 }
 
+
+
 /* Hero Section */
 
 .hero-background {
@@ -133,6 +170,7 @@ h1 {
 
 form {
     width: 80%;
+    max-width: 350px;
     background-color: white;
     margin: 0 auto;
     padding: .5rem;
@@ -270,6 +308,8 @@ h2 {
     padding: 1rem 5vw;
     color: white;
     text-align: left;
+    max-width: 1130px;
+    margin: 0 auto;
 }
 
 .services h3 {
@@ -287,28 +327,24 @@ h2 {
     line-height: 2rem;
 }
 
-.services img {
+.services img, .bg-teal img {
     width: 100vw;
     margin: 2.5vh 0;
+    max-width: 1000px;
 }
 
-.interior, .exterior {
-    position: relative;
-}
 
-.interior button, .exterior button {
-    position: absolute;
-    top: 5vh;
-    left: 20vw;
+.services-button{
+
     background-color: #333;
     color: white;
     font-size: 2rem;
-    padding: 1rem;
+    padding: 1rem 2.5rem;
     border-radius: 10px;
     border: none;
 }
 
-.interior button:hover, .exterior button:hover{
+.services-button:hover{
     transform: scale(1.1);
     transition: .5s ease;
 }
@@ -325,9 +361,39 @@ h2 {
 /* Testimonials Section */
 
 .testimonials {
-    padding: 5vh 0 10vh;
-    min-height: 75vh;
+    padding: 5vh 5vw 10vh;
+    min-height: 550px;
+    max-width: 1000px;
+    margin: 0 auto;
 }
+
+/* Service Details Page */
+
+.detail-container {
+    padding: 2.5vh 0;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: auto;
+}
+
+.list-item {
+    display: grid;
+    justify-self: center;
+    padding: 2.5vh 0;
+}
+
+/* About Page */
+
+.about-info {
+    
+}
+
+.about-info img {
+    width: 100vw;
+}
+
 
 /* Footer Section */
 
@@ -339,4 +405,16 @@ h2 {
     color: white;
     font-weight: normal;
     text-align: center;
+}
+
+
+
+@media screen and (width > 1000px) {
+    img {
+        border-radius: 10px;
+    }
+
+    .grid {
+        grid-template-columns: repeat(3, auto);
+    }
 }

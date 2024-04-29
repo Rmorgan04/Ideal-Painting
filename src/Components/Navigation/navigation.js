@@ -25,7 +25,7 @@ useEffect(() => {
     return (
         <nav>
           <div>
-            <span className="material-symbols-outlined">brush</span>
+            <NavLink to='/'><img className="logo" src="https://i.imgur.com/jpeRzN0.jpg" alt="ideal painting logo" /></NavLink>
           </div>
           <ul className='large-screen'>
             <li><NavLink to=''>Home</NavLink></li>
@@ -39,10 +39,10 @@ useEffect(() => {
             </div>
             <div className={`dropdown ${open? 'show' : 'hidden'}`}>
                 <ul>
-                    <li><NavLink  className="white" to=''>Home</NavLink></li>
-                    <li className="border-top"><NavLink className="white" to=''>About</NavLink></li>
-                    <li className="border-top"><NavLink className="white" to=''>Services</NavLink></li>
-                    <li className="border-top"><NavLink className="white" to=''>Contact</NavLink></li>
+                    <li><NavLink onClick={() => {setOpen(!open)}}  className="white" to='/'>Home</NavLink></li>
+                    <li className="border-top"><NavLink onClick={() => {setOpen(!open)}} className="white" to='/about'>About</NavLink></li>
+                    <li className="border-top"><NavLink onClick={() => {setOpen(!open)}} className="white" to='/services'>Services</NavLink></li>
+                    <li className="border-top"><NavLink onClick={() => {setOpen(!open)}} className="white" to=''>Contact</NavLink></li>
                 </ul>
             </div>
           </div>
