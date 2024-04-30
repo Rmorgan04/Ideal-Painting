@@ -5,6 +5,7 @@ import About from './Components/About/about';
 import './App.css';
 import { Routes, Route } from 'react-router-dom';
 import ServiceDetails from './Components/ServiceDetails/serviceDetails';
+import ContactUs from './Components/Contact-us/contactUs';
 
 function App() {
   return (
@@ -16,7 +17,7 @@ function App() {
         <Route path='/' element={<Main />} />
         <Route path='/services' element={<ServiceDetails />} />
         <Route path='/about' element={<About />} />
-        {/* <Route path='/contact' element={<Contact />} */}
+        <Route path='/contact' element={<ContactUs />} />
       </Routes>
       <footer>
         <Footer />

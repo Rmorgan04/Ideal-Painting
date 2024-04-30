@@ -1,4 +1,4 @@
-
+import { NavLink } from "react-router-dom";
 
 function About() {
     return (
@@ -11,7 +11,7 @@ function About() {
             <h3>Integrity is at the core of everything we do. </h3>
             <div className="about-info">
                 <p>We use only the highest quality paints and materials, ensuring long-lasting results. We take pride in our meticulous attention to detail and maintain open communication throughout the entire project, keeping you informed every step of the way.</p>
-                <img src="https://i.imgur.com/bkezh5L.jpg" alt="paint brush and can" />
+                <img className="about-img" src="https://i.imgur.com/bkezh5L.jpg" alt="paint brush and can" />
             </div>            
         </div>
         <div>
@@ -24,11 +24,12 @@ function About() {
             </ul>
         </div>
         <div className="bg-coal about-info">
-            <img src="" alt="" />
+            <img src="https://i.imgur.com/Tu3R3bG.jpg" alt="a paintbrush" />
             <p>Ideal Painting is more than just a painting company; we're your trusted partner in creating beautiful and functional spaces.  We offer a wide range of interior and exterior painting services to meet your unique needs.</p>            
         </div>
-        <div>
+        <div className="about-footer">
             <h2>Ready to transform your space? Contact us today for a free consultation!</h2>
+            <NavLink to='/contact'><button className="contact-button">Contact Us</button></NavLink>
             <h3>We look forward to working with you!</h3>
         </div>
         </>

@@ -42,7 +42,7 @@ useEffect(() => {
                     <li><NavLink onClick={() => {setOpen(!open)}}  className="white" to='/'>Home</NavLink></li>
                     <li className="border-top"><NavLink onClick={() => {setOpen(!open)}} className="white" to='/about'>About</NavLink></li>
                     <li className="border-top"><NavLink onClick={() => {setOpen(!open)}} className="white" to='/services'>Services</NavLink></li>
-                    <li className="border-top"><NavLink onClick={() => {setOpen(!open)}} className="white" to=''>Contact</NavLink></li>
+                    <li className="border-top"><NavLink onClick={() => {setOpen(!open)}} className="white" to='/contact'>Contact</NavLink></li>
                 </ul>
             </div>
           </div>

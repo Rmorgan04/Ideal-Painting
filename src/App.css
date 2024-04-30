@@ -33,7 +33,7 @@ a {
 .hidden {
     opacity: 0;
     visibility: hidden;
-    transform: translateX(20px);
+    transform: translateY(20px);
     transition: .5s ease;
     
 }
@@ -71,7 +71,7 @@ a {
 
 .bg-teal {
     background: linear-gradient(to top, #38a3a5 98%, transparent);
-    padding: 5vh 0;
+    padding: 5vh 0 0;
 }
 
 .bg-teal h3 {
@@ -94,6 +94,7 @@ a {
     width: 50px;
     height: 50px;
     border-radius: 50%;
+    margin-top: 5vh;
 }
 
 .drop-btn {
@@ -108,13 +109,13 @@ a {
     width: 100vw;
     position: absolute;
     background-color: #333;
-    padding: 10px;
+    padding: 10px 0;
     top: 10vh;
     right: 0;
 }
 
 .dropdown ul {
-    padding: 1rem;
+    padding: 1rem 0;
     width: 100%;
 }
 
@@ -190,7 +191,7 @@ form p {
     color: #333;
 }
 
-input, textarea {
+input, textarea, select {
     width: 90%;
     height: 2.8rem;
     margin: .25rem auto;
@@ -233,6 +234,10 @@ h2 {
 .value-title span {
     margin: 0 auto 1rem;
     font-size: 1.5rem;
+}
+
+.center {
+    text-align: center;
 }
 
 .red {
@@ -289,10 +294,6 @@ h2 {
     font-size: 1.5rem;
 }
 
-.about-section img {
- width: 50vw;
- height: 350px;
-}
 
 /* Services Section */
 
@@ -325,16 +326,21 @@ h2 {
 .services p {
     font-size: 1.2rem;
     line-height: 2rem;
+    margin-bottom: 1rem;
 }
 
 .services img, .bg-teal img {
     width: 100vw;
-    margin: 2.5vh 0;
     max-width: 1000px;
 }
 
+img {
+    margin-bottom: 4vh;
+}
 
-.services-button{
+
+
+.services-button, .contact-button {
 
     background-color: #333;
     color: white;
@@ -386,14 +392,36 @@ h2 {
 
 /* About Page */
 
-.about-info {
+/* .about-info {
     
-}
+} */
+
 
 .about-info img {
     width: 100vw;
+    margin-bottom: -1rem;
 }
 
+.about-footer {
+    padding: 5vh 0 10vh;
+}
+
+.contact-button {
+    margin-bottom: 5vh;
+    background-color: #38a3a5;
+}
+
+/* Contact Page */
+
+.contact-us-form input, .contact-us-form select, .contact-us-form textarea {
+
+}
+
+.map {
+    margin: 2rem 0 -1rem;
+    width: 100vw;
+    height: 40vh;
+}
 
 /* Footer Section */
 
