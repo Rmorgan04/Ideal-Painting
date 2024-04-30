@@ -413,8 +413,8 @@ img {
 
 /* Contact Page */
 
-.contact-us-form input, .contact-us-form select, .contact-us-form textarea {
-
+.contact-us-form {
+ max-width: 1200px;
 }
 
 .map {
