@@ -16,7 +16,6 @@ function ContactUs() {
                 <input placeholder="Email" type="email"  name="email" id="email"/>
                 <input placeholder="Phone Number" type="tel"  name="tel" id="tel"/>
                 <select>
-                    <option disabled>Service</option>
                     <option>Interior</option>
                     <option>Exterior</option>
                 </select>

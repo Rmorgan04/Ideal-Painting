@@ -35,9 +35,9 @@ function Values () {
   }
 
     return(
-        <div>
+        <section>
             <div className="values-header">
-              <h2>Values that Make Us the Ideal Choice</h2>
+              <h2 className="white">Values that Make Us the Ideal Choice</h2>
             </div>            
             <div className='values-carousel'>
               <div className='values-container'>
@@ -52,7 +52,7 @@ function Values () {
                 <span className='next' onClick={handleNext}>&#10095;</span>
               </div>
             </div>
-        </div>
+        </section>
             
     )
 };

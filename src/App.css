@@ -3,10 +3,23 @@
     padding: 0;
     box-sizing: border-box;
     text-align: center;
+    font-weight: normal;
+}
+
+section{
+    min-height: 90vh;
 }
 
 h1, h2, h3, h4, h5 {
     font-family: "GFS Didot", serif;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.8rem;
 }
 
 .material-symbols-outlined {
@@ -22,28 +35,11 @@ p, input, button, textarea {
 
 a {
     text-decoration: none;
-    color: #333;
 }
 
-
-.large-screen {
-    display: none;
-}
-
-.hidden {
-    opacity: 0;
-    visibility: hidden;
-    transform: translateY(20px);
-    transition: .5s ease;
-    
-}
-
-.show {
-    opacity: 1;
-    visibility: visible;
-    transform: translateX(0);
-    transition: .5s ease;
-
+img {
+    max-height: 45vh;
+    margin-bottom: 4vh;
 }
 
 .white {
@@ -54,39 +50,23 @@ a {
     color: #333;
 }
 
-.white:hover {
+.link:hover {
     color: #38a3a5;
     transition: .5s ease;
 }
 
 .bg-coal {
-    background: linear-gradient(to bottom, #333 95%, transparent);
-    padding-bottom: 2vh;
-    font-weight: normal;
-}
-
-.bg-coal h1, .bg-coal h2, .bg-coal h3, .bg-coal p {
-    color: white;
+    background: linear-gradient(to bottom, #333 97%, transparent);
 }
 
 .bg-teal {
     background: linear-gradient(to top, #38a3a5 98%, transparent);
-    padding: 5vh 0 0;
 }
 
-.bg-teal h3 {
-    color: white;
-    font-weight: normal;
-    font-size: 1.5rem;
+.no-margin {
+    margin: 0;
 }
 
-.bg-white {
-    padding: 5vh 0;
-}
-
-.bg-white h3, .bg-white p {
-    color: #333;
-}
 
 /* Navigation Section */
 
@@ -109,13 +89,27 @@ a {
     width: 100vw;
     position: absolute;
     background-color: #333;
-    padding: 10px 0;
     top: 10vh;
     right: 0;
 }
 
+.hidden {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-20px);
+    transition: .5s ease;
+    
+}
+
+.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+    transition: .5s ease;
+
+}
+
 .dropdown ul {
-    padding: 1rem 0;
     width: 100%;
 }
 
@@ -156,17 +150,17 @@ li {
 .darkened {
     width: 100%;
     background-image: linear-gradient(to bottom, #333, transparent);
-    color: white;
 }
 
 h1 {
-    font-size: 1.8rem;
+    font-size: 2.5rem;
     font-weight: bold;
     padding: 1rem 0 0;
 }
 
 .darkened h2 {
     padding-bottom: 2rem;
+    font-weight: normal;
 }
 
 form {
@@ -188,7 +182,6 @@ form h3 {
 
 form p {
     margin: -1rem 0 1rem;
-    color: #333;
 }
 
 input, textarea, select {
@@ -219,6 +212,10 @@ h2 {
 }
 
 /* Values Section */
+
+.values-carousel {
+    margin-top: 3.5rem;
+}
 
 .values-container {
     display: flex;
@@ -268,7 +265,6 @@ h2 {
 }
 
 .values-header {
-    color: #333;
     background: linear-gradient(to bottom, #38a3a5 95%, transparent);
     width: 100%;
     font-size: 1.3rem;
@@ -276,7 +272,6 @@ h2 {
 
 .values-header h2 {
     font-weight: normal;
-    color: white;
 }
 
 .value {
@@ -298,7 +293,7 @@ h2 {
 /* Services Section */
 
 .services {
-    padding: 5vh 0;
+    padding: 8vh 0;
     margin: 2rem 0 0 0;
     background: linear-gradient(to top, #38a3a5 99%, transparent);
     border-bottom-left-radius: 5px;
@@ -326,18 +321,13 @@ h2 {
 .services p {
     font-size: 1.2rem;
     line-height: 2rem;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
 }
 
 .services img, .bg-teal img {
     width: 100vw;
     max-width: 1000px;
 }
-
-img {
-    margin-bottom: 4vh;
-}
-
 
 
 .services-button, .contact-button {
@@ -353,6 +343,10 @@ img {
 .services-button:hover{
     transform: scale(1.1);
     transition: .5s ease;
+}
+
+.bottom-img {
+    margin: -.5rem;
 }
 
 
@@ -375,6 +369,14 @@ img {
 
 /* Service Details Page */
 
+.services-intro {
+    padding-bottom: 2.5rem;
+}
+
+.services-intro h3 {
+    margin: 1rem 0;
+}
+
 .detail-container {
     padding: 2.5vh 0;
 }
@@ -391,23 +393,70 @@ img {
 }
 
 /* About Page */
+.about-intro-background {
+ background: url('https://i.imgur.com/wvkCn68.jpg') no-repeat center;
+ background-size: cover;
+}
 
-/* .about-info {
-    
-} */
+.about-intro {
+    padding: 2rem 0 0;
+}
 
+
+.about-intro p {
+    margin-top: 2rem;
+}
+
+.about-desc {
+    padding: 2rem 0;
+}
+
+.about-desc h3 {
+    margin: 1rem 0;
+}
 
 .about-info img {
     width: 100vw;
-    margin-bottom: -1rem;
+    height: 300px;
+    margin: 2rem 0 -2.3rem;
+}
+
+.about-info-2 img {
+    width: 100vw;
+    margin-bottom: 2rem;
+
+}
+
+.about-info-2 p {
+    line-height: 2.5rem;
+}
+
+.grid-2 {
+    margin-bottom: 1.5rem;
+}
+
+.grid-2-header {
+    margin: 1.5rem 0 0;
+}
+
+.list-item h3{
+    font-size: 1.5rem;
 }
 
 .about-footer {
-    padding: 5vh 0 10vh;
+    padding: 5vh 5vw 10vh;
+}
+
+.about-footer h2 {
+    font-size: 2rem;
+}
+
+.about-footer h3 {
+    font-size: 1.5rem;
 }
 
 .contact-button {
-    margin-bottom: 5vh;
+    margin: 3rem 0 5rem;
     background-color: #38a3a5;
 }
 

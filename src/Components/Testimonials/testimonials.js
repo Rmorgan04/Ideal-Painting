@@ -35,13 +35,15 @@ function Testimonials() {
     });
 
     return (
-        <div className="testimonials">
-            <h2>Testimonials</h2>
-            <div>
-                <p className="charcoal">&quot;{testimonial[currentIndex].review}&quot;</p>
-                <p className="charcoal">{testimonial[currentIndex].name}</p>
+        <section>
+            <div className="testimonials">
+                <h2>Testimonials</h2>
+                <div>
+                    <p className="charcoal">&quot;{testimonial[currentIndex].review}&quot;</p>
+                    <p className="charcoal">{testimonial[currentIndex].name}</p>
+                </div>
             </div>
-        </div>
+        </section>
     );
 };
 

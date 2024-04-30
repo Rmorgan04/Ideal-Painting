@@ -8,7 +8,7 @@ function Contact() {
     }
 
     return (
-        <div>
+        <section className="contact-section">
             <form>
                 <h3>Ready to transform your space?</h3>
                 <p>Contact us today for a free consultation!</p>
@@ -17,7 +17,7 @@ function Contact() {
                 <textarea placeholder="Type Your Message Here..." id="message" />
                 <button onClick={handleSubmit} type="submit">Get in Touch</button>
             </form>
-        </div>
+        </section>
     );
 };
 

@@ -27,12 +27,12 @@ useEffect(() => {
           <div>
             <NavLink to='/'><img className="logo" src="https://i.imgur.com/jpeRzN0.jpg" alt="ideal painting logo" /></NavLink>
           </div>
-          <ul className='large-screen'>
+          {/* <ul className='large-screen'>
             <li><NavLink to=''>Home</NavLink></li>
             <li><NavLink to=''>About</NavLink></li>
             <li><NavLink to=''>Services</NavLink></li>
             <li><NavLink to=''>Contact</NavLink></li>
-          </ul>
+          </ul> */}
           <div className='nav-menu' ref={menuRef}>
             <div className="drop-btn" onClick={() => {setOpen(!open)}}>
                 <span className="material-symbols-outlined">menu</span>
@@ -40,9 +40,9 @@ useEffect(() => {
             <div className={`dropdown ${open? 'show' : 'hidden'}`}>
                 <ul>
                     <li><NavLink onClick={() => {setOpen(!open)}}  className="white" to='/'>Home</NavLink></li>
-                    <li className="border-top"><NavLink onClick={() => {setOpen(!open)}} className="white" to='/about'>About</NavLink></li>
-                    <li className="border-top"><NavLink onClick={() => {setOpen(!open)}} className="white" to='/services'>Services</NavLink></li>
-                    <li className="border-top"><NavLink onClick={() => {setOpen(!open)}} className="white" to='/contact'>Contact</NavLink></li>
+                    <li className="border-top"><NavLink onClick={() => {setOpen(!open)}} className="white link" to='/about'>About</NavLink></li>
+                    <li className="border-top"><NavLink onClick={() => {setOpen(!open)}} className="white link" to='/services'>Services</NavLink></li>
+                    <li className="border-top"><NavLink onClick={() => {setOpen(!open)}} className="white link" to='/contact'>Contact</NavLink></li>
                 </ul>
             </div>
           </div>
