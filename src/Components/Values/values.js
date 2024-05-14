@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const values = [
   {
@@ -21,6 +21,7 @@ const values = [
 function Values () {
 
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [screenSize, setScreenSize] = useState({width: window.innerWidth})
 
   const handleNext = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % values.length);
@@ -34,27 +35,64 @@ function Values () {
     }
   }
 
+  useEffect(() => {
+    const handleResize = () => {
+      setScreenSize({width: window.innerWidth})
+    }
+
+    window.addEventListener('resize', handleResize);
+
+  return () => {
+    window.removeEventListener('resize', handleResize);
+  }
+
+  }, []);
+  
+  
+  
+  if (screenSize.width > 1200) {
+    return (
+      <section>
+      <div className="values-header">
+            <h2 className="white">Values that Make Us the Ideal Choice</h2>
+          </div>           
+    <div className="values-grid">  
+      {values.map((value, index) => {
+        return <div key={index}>
+          <div>{value.icon}</div>
+          <h3>{value.title}</h3>
+          <p className="charcoal center">{value.description}</p>
+        </div>
+      })}
+    </div>
+    </section>
+
+      
+    );
+  } else {
     return(
-        <section>
-            <div className="values-header">
-              <h2 className="white">Values that Make Us the Ideal Choice</h2>
-            </div>            
-            <div className='values-carousel'>
-              <div className='values-container'>
-                <div className="value fade">
-                  <div className="value-title">
-                    <div>{values[currentIndex].icon}</div>
-                    <h3>{values[currentIndex].title}</h3>
-                  </div>                  
-                  <p>{values[currentIndex].description}</p>
-                </div>
-                <span className="previous" onClick={handlePrev}>&#10094;</span>
-                <span className='next' onClick={handleNext}>&#10095;</span>
+      <div>
+          <div className="values-header">
+            <h2 className="white">Values that Make Us the Ideal Choice</h2>
+          </div>            
+          <div className='values-carousel'>
+            <div className='values-container'>
+              <div className="value fade">
+                <div className="value-title">
+                  <div>{values[currentIndex].icon}</div>
+                  <h3>{values[currentIndex].title}</h3>
+                </div>                  
+                <p>{values[currentIndex].description}</p>
               </div>
+              <span className="previous" onClick={handlePrev}>&#10094;</span>
+              <span className='next' onClick={handleNext}>&#10095;</span>
             </div>
-        </section>
-            
-    )
+          </div>
+      </div>
+          
+  )
+  }
+    
 };
 
 export default Values;

@@ -9,13 +9,13 @@ function ContactUs() {
 
     return (
         <>
-            <h2>Contact Us Today</h2>
-            <p className="charcoal center">Call us at (999)-999-9999</p>
+            <h2 className="contact-header">Contact Us Today</h2>
+            <p className="charcoal center contact-number">Call us at (999)-999-9999</p>
             <form className="contact-us-form">
                 <input placeholder="Name" type="name"  name="name" id="name"/>
                 <input placeholder="Email" type="email"  name="email" id="email"/>
                 <input placeholder="Phone Number" type="tel"  name="tel" id="tel"/>
-                <select>
+                <select id="services">
                     <option>Interior</option>
                     <option>Exterior</option>
                 </select>

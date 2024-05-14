@@ -36,7 +36,7 @@ function About() {
         <section>
             <div className="about-footer">
                 <h2>Ready to transform your space? Contact us today for a free consultation!</h2>
-                <NavLink to='/contact'><button className="contact-button">Contact Us</button></NavLink>
+                <NavLink className="button" to='/contact'><button className="contact-button">Contact Us</button></NavLink>
                 <h3>We look forward to working with you!</h3>
             </div>
         </section>
